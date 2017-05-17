@@ -46,7 +46,6 @@ import com.android.systemui.qs.tiles.BluetoothTile;
 import com.android.systemui.qs.tiles.CastTile;
 import com.android.systemui.qs.tiles.CellularTile;
 import com.android.systemui.qs.tiles.ColorInversionTile;
-import com.android.systemui.qs.tiles.CompassTile;
 import com.android.systemui.qs.tiles.DataSaverTile;
 import com.android.systemui.qs.tiles.DndTile;
 import com.android.systemui.qs.tiles.FlashlightTile;
@@ -444,8 +443,6 @@ public class QSTileHost implements QSTile.Host, Tunable {
         else if (tileSpec.equals("saver")) return new DataSaverTile(this);
         else if (tileSpec.equals("night")) return new NightDisplayTile(this);
         else if (tileSpec.equals("nfc")) return new NfcTile(this);
-        else if (tileSpec.equals("compass")) return new CompassTile(this);
-        
         // Intent tiles.
         else if (tileSpec.startsWith(IntentTile.PREFIX)) return IntentTile.create(this,tileSpec);
         else if (tileSpec.startsWith(CustomTile.PREFIX)) return CustomTile.create(this,tileSpec);
