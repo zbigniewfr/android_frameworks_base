@@ -8776,12 +8776,6 @@ public final class Settings {
         public static final String LOW_POWER_MODE = "low_power";
 
         /**
-         * Disable hw buttons - actions, brightness, haptic feedback, overflow menu
-         * @hide
-         */
-        public static final String HARDWARE_KEYS_DISABLE = "hardware_keys_disable";
-
-        /**
          * Battery level [1-99] at which low power mode automatically turns on.
          * If 0, it will not automatically turn on.
          * @hide

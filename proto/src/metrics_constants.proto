@@ -2252,11 +2252,6 @@ message MetricsEvent {
     // CATEGORY: QUICK_SETTINGS
     QS_NFC = 800;
 
-    // OPEN: QS HWKeys tile shown
-    // ACTION: QS HWKeys tile tapped
-    // CATEGORY: QUICK_SETTINGS
-    QS_HWKeys = 801;
-
     // Add new aosp constants above this line.
     // END OF AOSP CONSTANTS
 
